@@ -1,42 +1,102 @@
-# ml-classification-clustering
-Breast Cancer Classification &amp; Customer Segmentation using ML algorithms
-# 🧠 ML Mini Project: Classification & Clustering
+# 🧠 Breast Cancer Classification using Machine Learning
 
-## 📌 Project Overview
-Machine Learning project implementing Classification 
-and Clustering algorithms on real-world datasets.
+A mini project that predicts whether a tumor is *Malignant* or *Benign*
+using two classification algorithms — Logistic Regression and Decision Tree —
+with colorful evaluation charts and a side-by-side comparison.
 
-## 📊 Projects Included
+---
 
-### 1. Breast Cancer Classification
-- Algorithms: Logistic Regression vs Decision Tree
-- Dataset: Breast Cancer Wisconsin (sklearn)
-- Accuracy: ~97% (Logistic Regression)
+## 📌 Problem Statement
 
-### 2. Customer Segmentation (Clustering)
-- Algorithm: K-Means Clustering
-- Dataset: Mall Customers (Public)
-- Segments: 5 customer groups identified
+Breast cancer is one of the most common cancers worldwide. Early and accurate
+detection saves lives. This project uses machine learning to classify tumors
+as Malignant (cancerous) or Benign (safe) based on 30 medical features.
+
+---
+
+## 📊 Dataset
+
+| Property | Details |
+|----------|---------|
+| Name | Breast Cancer Wisconsin Dataset |
+| Source | Built-in — sklearn.datasets.load_breast_cancer() |
+| Samples | 569 |
+| Features | 30 (radius, texture, perimeter, area, etc.) |
+| Classes | 0 = Malignant, 1 = Benign |
+| Null Values | None |
+
+No download needed — dataset loads directly from sklearn.
+
+---
+
+## 🤖 Algorithms Used
+
+### 1. Logistic Regression
+- Used for binary classification problems
+- Finds the best decision boundary between two classes
+- Fast, simple, and highly interpretable
+
+### 2. Decision Tree Classifier
+- Tree-like structure that splits data based on feature values
+- Easy to visualize and understand
+- Handles non-linear relationships well
+
+---
 
 ## 🛠️ Technologies Used
-- Python
-- Scikit-learn
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Google Colab
+
+- *Language* — Python 3
+- *Platform* — Google Colab
+- *Libraries*
+  - scikit-learn — ML models and metrics
+  - pandas — data handling
+  - numpy — numerical operations
+  - matplotlib — plotting charts
+  - seaborn — colorful visualizations
+
+---
 
 ## 📈 Results
-| Model | Accuracy |
-|-------|----------|
-| Logistic Regression | ~97% |
-| Decision Tree | ~93% |
-| K-Means Silhouette Score | ~0.55 |
+
+| Model | Accuracy | AUC Score |
+|-------|----------|-----------|
+| Logistic Regression | 97.37% ✅ | 0.9974 |
+| Decision Tree | 94.74% | 0.9440 |
+
+*Winner: Logistic Regression* with 97.37% accuracy and AUC of 0.9974
+
+---
+
+## 📉 Evaluation Charts
+
+- ✅ Class Distribution Bar Chart
+- ✅ Confusion Matrix — Logistic Regression (Blue)
+- ✅ Confusion Matrix — Decision Tree (Green)
+- ✅ ROC Curve Comparison
+- ✅ Accuracy Bar Chart
+
+---
 
 ## 🚀 How to Run
-1. Open the .ipynb file in Google Colab
-2. Run all cells top to bottom
-3. All charts will generate automatically
 
-## 📁 Dataset Sources
-- Breast Cancer: sklearn.datasets (built-in)
-- Mall Customers: Public GitHub dataset
+1. Open Google Colab — colab.research.google.com
+2. Click New Notebook
+3. Copy and paste the code from Mini_Project_Classification.ipynb
+4. Run each cell from top to bottom
+5. All charts will generate automatically
+
+No dataset download required — everything runs out of the box.
+
+---
+
+## 📁 Project Structure
+ml-mini-project/
+│
+├── Mini_Project_Classification.ipynb
+└── README.md
+
+## 👤 Author
+
+*Madhavi Tadi*
+Department of MCA.
+Avanthi Pg COllege — 2026
